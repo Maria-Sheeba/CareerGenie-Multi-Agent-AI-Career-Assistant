@@ -1,0 +1,13 @@
+class ProfileAnalyzerAgent:
+    def __init__(self, profile):
+        self.profile = profile
+    
+    def analyze(self):
+        # Simple analysis of profile
+        summary = {
+            "education": self.profile.get("education"),
+            "skills": self.profile.get("skills"),
+            "experience": self.profile.get("experience"),
+            "career_goal": self.profile.get("career_goal")
+        }
+        return summary
